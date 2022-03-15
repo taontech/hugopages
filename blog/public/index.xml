@@ -2,45 +2,46 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>第一个测试网站</title>
-    <link>http://taontech.top/</link>
+    <link>https://taontech.top/</link>
     <description>Recent content on 第一个测试网站</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 15 Mar 2022 10:24:02 +0800</lastBuildDate><atom:link href="http://taontech.top/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 15 Mar 2022 10:24:02 +0800</lastBuildDate><atom:link href="https://taontech.top/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>PostTest</title>
-      <link>http://taontech.top/post/posttest/</link>
+      <link>https://taontech.top/post/posttest/</link>
       <pubDate>Tue, 15 Mar 2022 10:24:02 +0800</pubDate>
       
-      <guid>http://taontech.top/post/posttest/</guid>
+      <guid>https://taontech.top/post/posttest/</guid>
       <description>test Auto webhook </description>
     </item>
     
     <item>
       <title>HugoDone</title>
-      <link>http://taontech.top/post/hugodone/</link>
+      <link>https://taontech.top/post/hugodone/</link>
       <pubDate>Tue, 15 Mar 2022 08:12:15 +0800</pubDate>
       
-      <guid>http://taontech.top/post/hugodone/</guid>
+      <guid>https://taontech.top/post/hugodone/</guid>
       <description>Hugo + Caddy + GitHub + Oracle免费云 + namasilo #### 搭建自动部署的markdown 博客系统 Hugo 用来生成网页
-Caddy web 服务，Github+git 存储同步代码，Oracle 免费VPS+IP， namesilo 便宜域名。</description>
+Caddy web 服务，Github+git 存储同步代码，Oracle 免费VPS+IP， namesilo 便宜域名。
+hugo &amp;ndash;theme=hyde &amp;ndash;baseUrl=&amp;ldquo;https://taontech.top/&amp;quot;</description>
     </item>
     
     <item>
       <title>First Web</title>
-      <link>http://taontech.top/post/first/</link>
+      <link>https://taontech.top/post/first/</link>
       <pubDate>Mon, 14 Mar 2022 22:11:23 +0800</pubDate>
       
-      <guid>http://taontech.top/post/first/</guid>
+      <guid>https://taontech.top/post/first/</guid>
       <description>Hello Hugo  第一个页面测试 查查 第三世界  what a Ultra </description>
     </item>
     
     <item>
       <title>About</title>
-      <link>http://taontech.top/about/</link>
+      <link>https://taontech.top/about/</link>
       <pubDate>Mon, 14 Mar 2022 22:10:48 +0800</pubDate>
       
-      <guid>http://taontech.top/about/</guid>
+      <guid>https://taontech.top/about/</guid>
       <description></description>
     </item>
     

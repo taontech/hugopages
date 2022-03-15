@@ -1,0 +1,6 @@
+[submodule "blog/themes/even"]
+	path = blog/themes/even
+	url = git@github.com:olOwOlo/hugo-theme-even.git
+[submodule "blog/themes/hyde"]
+	path = blog/themes/hyde
+	url = git@github.com:spf13/hyde.git
