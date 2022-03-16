@@ -1,3 +1,12 @@
 baseURL = 'http://taontech.top/'
 languageCode = 'en-us'
-title = '第一个测试网站'
+title = 'The Way We Win Matters'
+theme = "hyde"
+
+[params]
+  themeColor = "theme-base-08"
+[Menus]
+  main = [
+      {Name = "Github", URL = "https://github.com/taontech/"},
+      {Name = "LinkedIn", URL = "https://www.linkedin.com/in/taontech/"}
+  ]
