@@ -1,37 +1,37 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>The Way We Win Matters</title>
-    <link>https://taontech.top/</link>
-    <description>Recent content on The Way We Win Matters</description>
+    <title>战</title>
+    <link>http://taontech.top/</link>
+    <description>Recent content on 战</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 17 Mar 2022 14:57:13 +0800</lastBuildDate><atom:link href="https://taontech.top/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 17 Mar 2022 14:57:13 +0800</lastBuildDate><atom:link href="http://taontech.top/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>PushEvent</title>
-      <link>https://taontech.top/post/pushevent/</link>
+      <link>http://taontech.top/post/pushevent/</link>
       <pubDate>Thu, 17 Mar 2022 14:57:13 +0800</pubDate>
       
-      <guid>https://taontech.top/post/pushevent/</guid>
+      <guid>http://taontech.top/post/pushevent/</guid>
       <description>webhook 总是失败 应该是插件webhook的问题，如果已经存在git的仓库，则启动caddy时就会报错：没有设置仓库。删除掉已经同步的git路径，则可以成功
 hook 成功了，但是更新仓库的动作还是会失败，就是说，虽然服务知道了push发生了，但是没有成功拉取到更新后的代码。</description>
     </item>
     
     <item>
       <title>Chromecast</title>
-      <link>https://taontech.top/post/chromecast/</link>
+      <link>http://taontech.top/post/chromecast/</link>
       <pubDate>Wed, 16 Mar 2022 16:54:33 +0800</pubDate>
       
-      <guid>https://taontech.top/post/chromecast/</guid>
+      <guid>http://taontech.top/post/chromecast/</guid>
       <description>ChromeCast google TV 无法联网原因之一 最近，因为手贱把chromecast google tv 版重置了以后，死活无法联网激活，用尽各种办法，什么全局科学\劫持DNS等等都不行,经过无数次的尝试，终于找到可能的原因：wifi无线的加密方式 包含wpa3的就会连接不上，改成WPA+WPA2混合就可以了。</description>
     </item>
     
     <item>
       <title>PostTest</title>
-      <link>https://taontech.top/post/posttest/</link>
+      <link>http://taontech.top/post/posttest/</link>
       <pubDate>Tue, 15 Mar 2022 10:24:02 +0800</pubDate>
       
-      <guid>https://taontech.top/post/posttest/</guid>
+      <guid>http://taontech.top/post/posttest/</guid>
       <description>test Auto webhook 红米 AX6S 解锁 SSH 安装 ShellClash 并刷入 openwrt 暴躁鸭2022年3月10日 15:12 202203092215670
 准备工作
 红米 AX6S 路由器 一台 Windows 或 Mac 的电脑 提前下载好需要的固件 下载安装好 Termius（老手可以不安装，直接用系统自带的 terminal） 如果你只需要 ShellClash 的功能，只用看前半部分就 OK ；需要刷 openwrt 可以跳过 ShellClash 的部分。不用担心变砖，刷坏了用官方修复工具即可刷回原厂。
@@ -41,10 +41,10 @@ hook 成功了，但是更新仓库的动作还是会失败，就是说，虽然
     
     <item>
       <title>HugoDone</title>
-      <link>https://taontech.top/post/hugodone/</link>
+      <link>http://taontech.top/post/hugodone/</link>
       <pubDate>Tue, 15 Mar 2022 08:12:15 +0800</pubDate>
       
-      <guid>https://taontech.top/post/hugodone/</guid>
+      <guid>http://taontech.top/post/hugodone/</guid>
       <description>Hugo + Caddy + GitHub + Oracle免费云 + namasilo #### 搭建自动部署的markdown 博客系统 Hugo 用来生成网页
 Caddy web 服务，Github+git 存储同步代码，Oracle 免费VPS+IP， namesilo 便宜域名。
 hugo &amp;ndash;theme=hyde &amp;ndash;baseUrl=&amp;ldquo;https://taontech.top/&amp;quot;</description>
@@ -52,19 +52,19 @@ hugo &amp;ndash;theme=hyde &amp;ndash;baseUrl=&amp;ldquo;https://taontech.top/&a
     
     <item>
       <title>First Web</title>
-      <link>https://taontech.top/post/first/</link>
+      <link>http://taontech.top/post/first/</link>
       <pubDate>Mon, 14 Mar 2022 22:11:23 +0800</pubDate>
       
-      <guid>https://taontech.top/post/first/</guid>
+      <guid>http://taontech.top/post/first/</guid>
       <description>Hello World  记录一些心得想法 记录一些技巧、知识 发布一些感想、牢骚  TODO  自动部署有时间尝试下，不能每次都登录到VPS上，太麻烦 考虑手机书写发布的可能性  </description>
     </item>
     
     <item>
       <title>About</title>
-      <link>https://taontech.top/about/</link>
+      <link>http://taontech.top/about/</link>
       <pubDate>Mon, 14 Mar 2022 22:10:48 +0800</pubDate>
       
-      <guid>https://taontech.top/about/</guid>
+      <guid>http://taontech.top/about/</guid>
       <description></description>
     </item>
     

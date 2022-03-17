@@ -1,12 +1,14 @@
 baseURL = 'http://taontech.top/'
 languageCode = 'en-us'
-title = 'The Way We Win Matters'
+title = '战'
 theme = "hyde"
 
 [params]
-  themeColor = "theme-base-08"
+  description = "2022年度预测字"
+  themeColor = "theme-base-09"
+
 [Menus]
   main = [
       {Name = "Github", URL = "https://github.com/taontech/"},
-      {Name = "LinkedIn", URL = "https://www.linkedin.com/in/taontech/"}
+      {Name = "LinkedIn", URL = "https://www.linkedin.cn/injobs/in/ning-tao-45a59933"}
   ]
