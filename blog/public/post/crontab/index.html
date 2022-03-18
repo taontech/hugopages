@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head>
+  <link href="https://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.93.2" />
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Crontab &middot; 战</title>
+  <meta name="description" content="" />
+
+  
+  <link type="text/css" rel="stylesheet" href="https://taontech.top/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://taontech.top/css/poole.css">
+  <link type="text/css" rel="stylesheet" href="https://taontech.top/css/syntax.css">
+  <link type="text/css" rel="stylesheet" href="https://taontech.top/css/hyde.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
+
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  
+</head>
+
+  <body class="theme-base-09 ">
+  <aside class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <a href="https://taontech.top/"><h1>战</h1></a>
+      <p class="lead">
+       2022年度预测字 
+      </p>
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li><a href="https://taontech.top/">Home</a> </li>
+        <li><a href="https://github.com/taontech/"> Github </a></li><li><a href="https://www.linkedin.cn/injobs/in/ning-tao-45a59933"> LinkedIn </a></li>
+      </ul>
+    </nav>
+
+    <p>&copy; 2022. All rights reserved. </p>
+  </div>
+</aside>
+
+    <main class="content container">
+    <div class="post">
+  <h1>Crontab</h1>
+  <time datetime=2022-03-18T18:37:18&#43;0800 class="post-date">Fri, Mar 18, 2022</time>
+  <h1 id="定时执行的脚本">定时执行的脚本</h1>
+<p>##背景
+项目在开发过程中，我们的代码是托管在coding上面的，而服务器上面的代码的更新部署是使用git的，这就导致了，我每次都需要登录到那台服务器，然后进入项目的目录，执行git命令更新，但是在开发阶段，我们的代码更新的频率太高了，可不可以做到实时更新呢，其实git上面有git hocks，也就是钩子的概念，但是那个相对复杂，如果无法做到实时，那么定时可不可以，是可以的，利用shell脚本和crontab。 ###实际操作 首先要了解crontab,这这篇文写的不错，但是我没仔细看，因为我发现了，我可以直接使用下面这个命令来做
+##在Linux
+crontab -e
+然后就会进入一个vi的编辑模式，在里面就可以参照上面文章里面的写你的定时器了，我写了一个5分钟更新一次的定时器
+*/5 * * * * /home/shell/sks-pull.sh
+很简单，就是没5分钟执行一下这个脚本，脚本的内容是这样的
+‘#!/bin/sh’
+PATH=&quot;/home/wwwroot/BFLMobileMall&quot;
+cd $PATH
+/usr/bin/git pull
+很简单的一个脚本，这就可以实现没5分钟pull一次我的代码了
+###后记
+这里有一些东西需要说明一下，定时脚本在更新了以后，里面的一些执行成功失败的语句，会保存下来，具体在哪里呢，其实每次登录服务器都会有提醒
+您在 /var/spool/mail/root 中有新邮件
+然后你就可以看到你的脚本有没有执行成功了</p>
+
+</div>
+
+
+    </main>
+
+    
+      
+    
+  </body>
+</html>
