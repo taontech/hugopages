@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head>
+  <link href="https://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.93.2" />
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>AutoCloure &middot; 战</title>
+  <meta name="description" content="" />
+
+  
+  <link type="text/css" rel="stylesheet" href="https://taontech.top/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://taontech.top/css/poole.css">
+  <link type="text/css" rel="stylesheet" href="https://taontech.top/css/syntax.css">
+  <link type="text/css" rel="stylesheet" href="https://taontech.top/css/hyde.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
+
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  
+</head>
+
+  <body class="theme-base-09 ">
+  <aside class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <a href="https://taontech.top/"><h1>战</h1></a>
+      <p class="lead">
+       2022年度预测字 
+      </p>
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li><a href="https://taontech.top/">Home</a> </li>
+        <li><a href="https://github.com/taontech/"> Github </a></li><li><a href="https://www.linkedin.cn/injobs/in/ning-tao-45a59933"> LinkedIn </a></li>
+      </ul>
+    </nav>
+
+    <p>&copy; 2022. All rights reserved. </p>
+  </div>
+</aside>
+
+    <main class="content container">
+    <div class="post">
+  <h1>AutoCloure</h1>
+  <time datetime=2022-03-18T17:39:41&#43;0800 class="post-date">Fri, Mar 18, 2022</time>
+  <h3 id="autocloure-用法记录">@AutoCloure 用法记录</h3>
+<p>和原来理解的不同，有一种说法是，@AutoCloure主要的用途是延迟计算，当函数的参数需要延迟时，使用@AutoCloure可以达到目标。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">import</span> <span style="color:#a6e22e">UIKit</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">var</span> greeting = <span style="color:#e6db74">&#34;Hello, playground&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#960050;background-color:#1e0010">🍉</span>(){
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;🍉&#34;</span>)
+</span></span><span style="display:flex;"><span>    wow(bPrint:<span style="color:#66d9ef">true</span>,count:<span style="color:#960050;background-color:#1e0010">🆘</span>() <span style="color:#f92672">+</span> <span style="color:#ae81ff">10</span>)
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#960050;background-color:#1e0010">🆘</span>()-&gt;Int{
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;help&#34;</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">9</span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">var</span> aa:Int?
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> ssdsdf = <span style="color:#960050;background-color:#1e0010">🆘</span>()
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> b =  aa ?? ssdsdf
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">wow</span>(bPrint:Bool, count:<span style="color:#66d9ef">@autoclosure</span> ()-&gt; Int){
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> bPrint{
+</span></span><span style="display:flex;"><span>        print( count() )
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">🍉</span>()
+</span></span></code></pre></div><p>上面代码中，🆘()方法是否调用，取决于wow函数中的逻辑，并不是作为函数参数一定会被调用。</p>
+
+</div>
+
+
+    </main>
+
+    
+      
+    
+  </body>
+</html>

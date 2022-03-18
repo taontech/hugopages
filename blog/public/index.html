@@ -53,6 +53,14 @@
     <div class="posts">
 <article class="post">
   <h1 class="post-title">
+    <a href="https://taontech.top/post/autocloure/">AutoCloure</a>
+  </h1>
+  <time datetime="2022-03-18T17:39:41&#43;0800" class="post-date">Fri, Mar 18, 2022</time>
+  @AutoCloure 用法记录 和原来理解的不同，有一种说法是，@AutoCloure主要的用途是延迟计算，当函数的参数需要延迟时，使用@AutoCloure可以达到目标。
+import UIKit  var greeting = &#34;Hello, playground&#34; func 🍉(){  print(&#34;🍉&#34;)  wow(bPrint:true,count:🆘() + 10) } func 🆘()-&gt;Int{  print(&#34;help&#34;)  return 9 } var aa:Int? let ssdsdf = 🆘() let b = aa ?? ssdsdf  func wow(bPrint:Bool, count:@autoclosure ()-&gt; Int){  if bPrint{  print( count() )  } } 🍉() 上面代码中，🆘()方法是否调用，取决于wow函数中的逻辑，并不是作为函数参数一定会被调用。
+  
+</article><article class="post">
+  <h1 class="post-title">
     <a href="https://taontech.top/post/pushevent/">PushEvent</a>
   </h1>
   <time datetime="2022-03-17T14:57:13&#43;0800" class="post-date">Thu, Mar 17, 2022</time>

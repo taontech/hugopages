@@ -6,7 +6,17 @@
     <description>Recent content in Posts on 战</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 17 Mar 2022 14:57:13 +0800</lastBuildDate><atom:link href="https://taontech.top/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 18 Mar 2022 17:39:41 +0800</lastBuildDate><atom:link href="https://taontech.top/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AutoCloure</title>
+      <link>https://taontech.top/post/autocloure/</link>
+      <pubDate>Fri, 18 Mar 2022 17:39:41 +0800</pubDate>
+      
+      <guid>https://taontech.top/post/autocloure/</guid>
+      <description>@AutoCloure 用法记录 和原来理解的不同，有一种说法是，@AutoCloure主要的用途是延迟计算，当函数的参数需要延迟时，使用@AutoCloure可以达到目标。
+import UIKit  var greeting = &amp;#34;Hello, playground&amp;#34; func 🍉(){  print(&amp;#34;🍉&amp;#34;)  wow(bPrint:true,count:🆘() + 10) } func 🆘()-&amp;gt;Int{  print(&amp;#34;help&amp;#34;)  return 9 } var aa:Int? let ssdsdf = 🆘() let b = aa ?? ssdsdf  func wow(bPrint:Bool, count:@autoclosure ()-&amp;gt; Int){  if bPrint{  print( count() )  } } 🍉() 上面代码中，🆘()方法是否调用，取决于wow函数中的逻辑，并不是作为函数参数一定会被调用。</description>
+    </item>
+    
     <item>
       <title>PushEvent</title>
       <link>https://taontech.top/post/pushevent/</link>
