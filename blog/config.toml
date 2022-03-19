@@ -133,34 +133,34 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
     hint = 30               # Display hint if the last modified time is more than these days ago.    # 如果文章最后更新于这天数之前，显示提醒
     warn = 180              # Display warning if the last modified time is more than these days ago.    # 如果文章最后更新于这天数之前，显示警告
 
-  [params.gitment]          # Gitment is a comment system based on GitHub issues. see https://github.com/imsun/gitment
-    owner = "taontech"              # Your GitHub ID
-    repo = "https://github.com/taontech/hugopages.git"               # The repo to store comments
-    clientId = "3c363d50efbac96d4ccf"           # Your client ID
-    clientSecret = "be359f87cb1cfef9defe74bfdcc4d36b254d4af9"       # Your client secret
+  #[params.gitment]          # Gitment is a comment system based on GitHub issues. see https://github.com/imsun/gitment
+  #  owner = "taontech"              # Your GitHub ID
+  #  repo = "https://github.com/taontech/hugopages.git"               # The repo to store comments
+  #  clientId = "3c363d50efbac96d4ccf"           # Your client ID
+  #  clientSecret = "be359f87cb1cfef9defe74bfdcc4d36b254d4af9"       # Your client secret
 
-  [params.utterances]       # https://utteranc.es/
-    owner = "taontech"              # Your GitHub ID
-    repo = "https://github.com/taontech/hugopages.git"                # The repo to store comments
+  #[params.utterances]       # https://utteranc.es/
+  #  owner = "taontech"              # Your GitHub ID
+  #  repo = "https://github.com/taontech/hugopages.git"                # The repo to store comments
 
-  [params.gitalk]           # Gitalk is a comment system based on GitHub issues. see https://github.com/gitalk/gitalk
-    owner = "taontech"              # Your GitHub ID
-    repo = "https://github.com/taontech/hugopages.git"               # The repo to store comments
-    clientId = "3c363d50efbac96d4ccf"           # Your client ID
-    clientSecret = "be359f87cb1cfef9defe74bfdcc4d36b254d4af9"       # Your client secret
+  #[params.gitalk]           # Gitalk is a comment system based on GitHub issues. see https://github.com/gitalk/gitalk
+  #  owner = "taontech"              # Your GitHub ID
+  #  repo = "https://github.com/taontech/hugopages.git"               # The repo to store comments
+  #  clientId = "3c363d50efbac96d4ccf"           # Your client ID
+  #  clientSecret = "be359f87cb1cfef9defe74bfdcc4d36b254d4af9"       # Your client secret
 
   # Valine.
   # You can get your appid and appkey from https://leancloud.cn
   # more info please open https://valine.js.org
-  [params.valine]
-    enable = false
-    appId = '你的appId'
-    appKey = '你的appKey'
-    notify = false  # mail notifier , https://github.com/xCss/Valine/wiki
-    verify = false # Verification code
-    avatar = 'mm'
-    placeholder = '说点什么吧...'
-    visitor = false
+ # [params.valine]
+  #  enable = false
+  #  appId = '你的appId'
+  #  appKey = '你的appKey'
+  #  notify = false  # mail notifier , https://github.com/xCss/Valine/wiki
+  #  verify = false # Verification code
+  #  avatar = 'mm'
+  #  placeholder = '说点什么吧...'
+ #   visitor = false
 
   [params.flowchartDiagrams]# see https://blog.olowolo.com/example-site/post/js-flowchart-diagrams/
     enable = false
