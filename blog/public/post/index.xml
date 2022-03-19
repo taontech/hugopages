@@ -6,7 +6,19 @@
     <description>Recent content in Posts on 战</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 18 Mar 2022 18:37:18 +0800</lastBuildDate><atom:link href="https://taontech.top/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 19 Mar 2022 09:37:02 +0800</lastBuildDate><atom:link href="https://taontech.top/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>NetworkSet</title>
+      <link>https://taontech.top/post/networkset/</link>
+      <pubDate>Sat, 19 Mar 2022 09:37:02 +0800</pubDate>
+      
+      <guid>https://taontech.top/post/networkset/</guid>
+      <description>Openwrt 如何下发不同的DNS和网关 修改/etc/config/network 文件 config &amp;lsquo;interface&amp;rsquo; &amp;rsquo;lan&amp;rsquo; option &amp;rsquo;type&amp;rsquo; &amp;lsquo;bridge&amp;rsquo; option &amp;lsquo;ifname&amp;rsquo; &amp;rsquo;eth0.0&amp;rsquo; option &amp;lsquo;proto&amp;rsquo; &amp;lsquo;static&amp;rsquo; option &amp;rsquo;netmask&amp;rsquo; &amp;lsquo;255.255.255.0&amp;rsquo; option &amp;lsquo;dns&amp;rsquo; &amp;lsquo;208.67.222.222&amp;rsquo;
+option &amp;lsquo;gateway&amp;rsquo; &amp;lsquo;192.168.3.1&amp;rsquo;
+option &amp;lsquo;ipaddr&amp;rsquo; &amp;lsquo;192.168.3.250&amp;rsquo; ————————————————
+版权声明：本文为CSDN博主「zjqlovell」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。 原文链接：https://blog.csdn.net/zjqlovell/article/details/78598959</description>
+    </item>
+    
     <item>
       <title>Crontab</title>
       <link>https://taontech.top/post/crontab/</link>
