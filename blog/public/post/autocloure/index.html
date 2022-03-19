@@ -1,293 +1,321 @@
 <!DOCTYPE html>
-<html lang="en" dir="auto">
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>AutoCloure - TaonTech</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
-<head><meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="index, follow">
-<title>AutoCloure | 战</title>
-<meta name="keywords" content="" />
-<meta name="description" content="@AutoCloure 用法记录 和原来理解的不同，有一种说法是，@AutoCloure主要的用途是延迟计算，当函数的参数需要延迟时，使用@AutoCloure可以达到目标。
-import UIKit  var greeting = &#34;Hello, playground&#34; func 🍉(){  print(&#34;🍉&#34;)  wow(bPrint:true,count:🆘() &#43; 10) } func 🆘()-&gt;Int{  print(&#34;help&#34;)  return 9 } var aa:Int? let ssdsdf = 🆘() let b = aa ?? ssdsdf  func wow(bPrint:Bool, count:@autoclosure ()-&gt; Int){  if bPrint{  print( count() )  } } 🍉() 上面代码中，🆘()方法是否调用，取决于wow函数中的逻辑，并不是作为函数参数一定会被调用。">
-<meta name="author" content="">
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="taontech" /><meta name="description" content="@AutoCloure 用法记录 和原来理解的不同，有一种说法是，@AutoCloure主要的用途是延迟计算，当函数的参数需要延迟时，使用@AutoCloure可以" /><meta name="keywords" content="Hugo, theme, even" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.94.2 with theme even" />
+
+
 <link rel="canonical" href="https://taontech.top/post/autocloure/" />
-<link crossorigin="anonymous" href="/assets/css/stylesheet.min.48a18943c2fc15c38a372b8dde1f5e5dc0bc64fa6cb90f5a817d2f8c76b7f3ae.css" integrity="sha256-SKGJQ8L8FcOKNyuN3h9eXcC8ZPpsuQ9agX0vjHa3864=" rel="preload stylesheet" as="style">
-<script defer crossorigin="anonymous" src="/assets/js/highlight.min.4dcb3c4f38462f66c6b6137227726f5543cb934cca9788f041c087e374491df2.js" integrity="sha256-Tcs8TzhGL2bGthNyJ3JvVUPLk0zKl4jwQcCH43RJHfI="
-    onload="hljs.initHighlightingOnLoad();"></script>
-<link rel="icon" href="https://taontech.top/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="https://taontech.top/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://taontech.top/favicon-32x32.png">
-<link rel="apple-touch-icon" href="https://taontech.top/apple-touch-icon.png">
-<link rel="mask-icon" href="https://taontech.top/safari-pinned-tab.svg">
-<meta name="theme-color" content="#2e2e33">
-<meta name="msapplication-TileColor" content="#2e2e33">
-<noscript>
-    <style>
-        #theme-toggle,
-        .top-link {
-            display: none;
-        }
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
 
-    </style>
-    <style>
-        @media (prefers-color-scheme: dark) {
-            :root {
-                --theme: rgb(29, 30, 32);
-                --entry: rgb(46, 46, 51);
-                --primary: rgb(218, 218, 219);
-                --secondary: rgb(155, 156, 157);
-                --tertiary: rgb(65, 66, 68);
-                --content: rgb(196, 196, 197);
-                --hljs-bg: rgb(46, 46, 51);
-                --code-bg: rgb(55, 56, 62);
-                --border: rgb(51, 51, 51);
-            }
 
-            .list {
-                background: var(--theme);
-            }
 
-            .list:not(.dark)::-webkit-scrollbar-track {
-                background: 0 0;
-            }
+<link href="/sass/main.min.f92fd13721ddf72129410fd8250e73152cc6f2438082b6c0208dc24ee7c13fc4.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
 
-            .list:not(.dark)::-webkit-scrollbar-thumb {
-                border-color: var(--theme);
-            }
-        }
 
-    </style>
-</noscript><meta property="og:title" content="AutoCloure" />
-<meta property="og:description" content="@AutoCloure 用法记录 和原来理解的不同，有一种说法是，@AutoCloure主要的用途是延迟计算，当函数的参数需要延迟时，使用@AutoCloure可以达到目标。
-import UIKit  var greeting = &#34;Hello, playground&#34; func 🍉(){  print(&#34;🍉&#34;)  wow(bPrint:true,count:🆘() &#43; 10) } func 🆘()-&gt;Int{  print(&#34;help&#34;)  return 9 } var aa:Int? let ssdsdf = 🆘() let b = aa ?? ssdsdf  func wow(bPrint:Bool, count:@autoclosure ()-&gt; Int){  if bPrint{  print( count() )  } } 🍉() 上面代码中，🆘()方法是否调用，取决于wow函数中的逻辑，并不是作为函数参数一定会被调用。" />
+<meta property="og:title" content="AutoCloure" />
+<meta property="og:description" content="@AutoCloure 用法记录 和原来理解的不同，有一种说法是，@AutoCloure主要的用途是延迟计算，当函数的参数需要延迟时，使用@AutoCloure可以" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://taontech.top/post/autocloure/" /><meta property="article:section" content="post" />
-<meta property="article:published_time" content="2022-03-18T17:39:41&#43;08:00" />
-<meta property="article:modified_time" content="2022-03-18T17:39:41&#43;08:00" />
+<meta property="article:published_time" content="2022-03-18T17:39:41+08:00" />
+<meta property="article:modified_time" content="2022-03-18T17:39:41+08:00" />
 
-<meta name="twitter:card" content="summary"/>
+<meta itemprop="name" content="AutoCloure">
+<meta itemprop="description" content="@AutoCloure 用法记录 和原来理解的不同，有一种说法是，@AutoCloure主要的用途是延迟计算，当函数的参数需要延迟时，使用@AutoCloure可以"><meta itemprop="datePublished" content="2022-03-18T17:39:41+08:00" />
+<meta itemprop="dateModified" content="2022-03-18T17:39:41+08:00" />
+<meta itemprop="wordCount" content="245">
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="AutoCloure"/>
-<meta name="twitter:description" content="@AutoCloure 用法记录 和原来理解的不同，有一种说法是，@AutoCloure主要的用途是延迟计算，当函数的参数需要延迟时，使用@AutoCloure可以达到目标。
-import UIKit  var greeting = &#34;Hello, playground&#34; func 🍉(){  print(&#34;🍉&#34;)  wow(bPrint:true,count:🆘() &#43; 10) } func 🆘()-&gt;Int{  print(&#34;help&#34;)  return 9 } var aa:Int? let ssdsdf = 🆘() let b = aa ?? ssdsdf  func wow(bPrint:Bool, count:@autoclosure ()-&gt; Int){  if bPrint{  print( count() )  } } 🍉() 上面代码中，🆘()方法是否调用，取决于wow函数中的逻辑，并不是作为函数参数一定会被调用。"/>
+<meta name="twitter:description" content="@AutoCloure 用法记录 和原来理解的不同，有一种说法是，@AutoCloure主要的用途是延迟计算，当函数的参数需要延迟时，使用@AutoCloure可以"/>
 
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position":  1 ,
-      "name": "Posts",
-      "item": "https://taontech.top/post/"
-    }, 
-    {
-      "@type": "ListItem",
-      "position":  2 ,
-      "name": "AutoCloure",
-      "item": "https://taontech.top/post/autocloure/"
-    }
-  ]
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "AutoCloure",
-  "name": "AutoCloure",
-  "description": "@AutoCloure 用法记录 和原来理解的不同，有一种说法是，@AutoCloure主要的用途是延迟计算，当函数的参数需要延迟时，使用@AutoCloure可以达到目标。\nimport UIKit  var greeting = \u0026#34;Hello, playground\u0026#34; func 🍉(){  print(\u0026#34;🍉\u0026#34;)  wow(bPrint:true,count:🆘() + 10) } func 🆘()-\u0026gt;Int{  print(\u0026#34;help\u0026#34;)  return 9 } var aa:Int? let ssdsdf = 🆘() let b = aa ?? ssdsdf  func wow(bPrint:Bool, count:@autoclosure ()-\u0026gt; Int){  if bPrint{  print( count() )  } } 🍉() 上面代码中，🆘()方法是否调用，取决于wow函数中的逻辑，并不是作为函数参数一定会被调用。",
-  "keywords": [
-    
-  ],
-  "articleBody": "@AutoCloure 用法记录 和原来理解的不同，有一种说法是，@AutoCloure主要的用途是延迟计算，当函数的参数需要延迟时，使用@AutoCloure可以达到目标。\nimport UIKit  var greeting = \"Hello, playground\" func 🍉(){  print(\"🍉\")  wow(bPrint:true,count:🆘() + 10) } func 🆘()-Int{  print(\"help\")  return 9 } var aa:Int? let ssdsdf = 🆘() let b = aa ?? ssdsdf  func wow(bPrint:Bool, count:@autoclosure ()- Int){  if bPrint{  print( count() )  } } 🍉() 上面代码中，🆘()方法是否调用，取决于wow函数中的逻辑，并不是作为函数参数一定会被调用。\n",
-  "wordCount" : "49",
-  "inLanguage": "en",
-  "datePublished": "2022-03-18T17:39:41+08:00",
-  "dateModified": "2022-03-18T17:39:41+08:00",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://taontech.top/post/autocloure/"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "战",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://taontech.top/favicon.ico"
-    }
-  }
-}
-</script>
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
 </head>
-
-<body class="" id="top">
-<script>
-    if (localStorage.getItem("pref-theme") === "dark") {
-        document.body.classList.add('dark');
-    } else if (localStorage.getItem("pref-theme") === "light") {
-        document.body.classList.remove('dark')
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.body.classList.add('dark');
-    }
-
-</script>
-
-<header class="header">
-    <nav class="nav">
-        <div class="logo">
-            <a href="https://taontech.top/" accesskey="h" title="战 (Alt + H)">战</a>
-            <span class="logo-switches">
-                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
-                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-                    </svg>
-                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <circle cx="12" cy="12" r="5"></circle>
-                        <line x1="12" y1="1" x2="12" y2="3"></line>
-                        <line x1="12" y1="21" x2="12" y2="23"></line>
-                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                        <line x1="1" y1="12" x2="3" y2="12"></line>
-                        <line x1="21" y1="12" x2="23" y2="12"></line>
-                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-                    </svg>
-                </button>
-            </span>
-        </div>
-        <ul id="menu">
-            <li>
-                <a href="https://github.com/taontech/" title="Github">
-                    <span>Github</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://www.linkedin.cn/injobs/in/ning-tao-45a59933" title="LinkedIn">
-                    <span>LinkedIn</span>
-                </a>
-            </li>
-        </ul>
-    </nav>
-</header>
-<main class="main">
-
-<article class="post-single">
-  <header class="post-header">
-    
-    <h1 class="post-title">
-      AutoCloure
-    </h1>
-    <div class="post-meta"><span title='2022-03-18 17:39:41 +0800 CST'>March 18, 2022</span>
-
-</div>
-  </header> 
-  <div class="post-content"><h3 id="autocloure-用法记录">@AutoCloure 用法记录<a hidden class="anchor" aria-hidden="true" href="#autocloure-用法记录">#</a></h3>
-<p>和原来理解的不同，有一种说法是，@AutoCloure主要的用途是延迟计算，当函数的参数需要延迟时，使用@AutoCloure可以达到目标。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">import</span> <span style="color:#a6e22e">UIKit</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">var</span> greeting = <span style="color:#e6db74">&#34;Hello, playground&#34;</span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#960050;background-color:#1e0010">🍉</span>(){
-</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;🍉&#34;</span>)
-</span></span><span style="display:flex;"><span>    wow(bPrint:<span style="color:#66d9ef">true</span>,count:<span style="color:#960050;background-color:#1e0010">🆘</span>() <span style="color:#f92672">+</span> <span style="color:#ae81ff">10</span>)
-</span></span><span style="display:flex;"><span>}
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#960050;background-color:#1e0010">🆘</span>()-&gt;Int{
-</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;help&#34;</span>)
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">9</span>
-</span></span><span style="display:flex;"><span>}
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">var</span> aa:Int?
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> ssdsdf = <span style="color:#960050;background-color:#1e0010">🆘</span>()
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> b =  aa ?? ssdsdf
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">wow</span>(bPrint:Bool, count:<span style="color:#66d9ef">@autoclosure</span> ()-&gt; Int){
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> bPrint{
-</span></span><span style="display:flex;"><span>        print( count() )
-</span></span><span style="display:flex;"><span>    }
-</span></span><span style="display:flex;"><span>}
-</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">🍉</span>()
-</span></span></code></pre></div><p>上面代码中，🆘()方法是否调用，取决于wow函数中的逻辑，并不是作为函数参数一定会被调用。</p>
-
-
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">T</a>
   </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a>
+  </ul>
 
-  <footer class="post-footer">
-  </footer>
-</article>
-    </main>
+  
+
+
+</nav>
+
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">T</a>
+</div>
+
+
+
+
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">Categories</a>
+      </li>
+  </ul>
+</nav>
+
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
     
-<footer class="footer">
-    <span>&copy; 2022 <a href="https://taontech.top/">战</a></span>
-    <span>
-        Powered by
-        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
-        <a href="https://git.io/hugopapermod" rel="noopener" target="_blank">PaperMod</a>
+    <header class="post-header">
+      <h1 class="post-title">AutoCloure</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 181818-03-03 </span>
+        
+          <span class="more-meta"> 245 words </span>
+          <span class="more-meta"> 1 min read </span>
+        
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">Contents</h2>
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li>
+          <ul>
+            <li><a href="#autocloure-用法记录">@AutoCloure 用法记录</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <h3 id="autocloure-用法记录">@AutoCloure 用法记录</h3>
+<p>和原来理解的不同，有一种说法是，@AutoCloure主要的用途是延迟计算，当函数的参数需要延迟时，使用@AutoCloure可以达到目标。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-swift" data-lang="swift"><span class="line"><span class="cl"><span class="kd">import</span> <span class="nc">UIKit</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">var</span> <span class="nv">greeting</span> <span class="p">=</span> <span class="s">&#34;Hello, playground&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="kd">func</span> <span class="err">🍉</span><span class="p">(){</span>
+</span></span><span class="line"><span class="cl">    <span class="bp">print</span><span class="p">(</span><span class="s">&#34;🍉&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">wow</span><span class="p">(</span><span class="n">bPrint</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="bp">count</span><span class="p">:</span><span class="err">🆘</span><span class="p">()</span> <span class="o">+</span> <span class="mi">10</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="kd">func</span> <span class="err">🆘</span><span class="p">()-&gt;</span><span class="nb">Int</span><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="bp">print</span><span class="p">(</span><span class="s">&#34;help&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">9</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="kd">var</span> <span class="nv">aa</span><span class="p">:</span><span class="nb">Int</span><span class="p">?</span>
+</span></span><span class="line"><span class="cl"><span class="kd">let</span> <span class="nv">ssdsdf</span> <span class="p">=</span> <span class="err">🆘</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="kd">let</span> <span class="nv">b</span> <span class="p">=</span>  <span class="n">aa</span> <span class="p">??</span> <span class="n">ssdsdf</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">func</span> <span class="nf">wow</span><span class="p">(</span><span class="n">bPrint</span><span class="p">:</span><span class="nb">Bool</span><span class="p">,</span> <span class="bp">count</span><span class="p">:</span><span class="kr">@autoclosure</span> <span class="p">()-&gt;</span> <span class="nb">Int</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">bPrint</span><span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">print</span><span class="p">(</span> <span class="bp">count</span><span class="p">()</span> <span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="err">🍉</span><span class="p">()</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>上面代码中，🆘()方法是否调用，取决于wow函数中的逻辑，并不是作为函数参数一定会被调用。</p>
+
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">Author</span>
+    <span class="item-content">taontech</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">LastMod</span>
+    <span class="item-content">
+        181818-03-03
+        
     </span>
-</footer>
-<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
-        <path d="M12 6H0l6-6z" />
-    </svg>
-</a>
-
-<script>
-    let menu = document.getElementById('menu')
-    if (menu) {
-        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
-        menu.onscroll = function () {
-            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+  </p>
+  
+  
+</div>
+<footer class="post-footer">
+      
+      <nav class="post-nav">
+        <a class="prev" href="/post/crontab/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">Crontab</span>
+            <span class="prev-text nav-mobile">Prev</span>
+          </a>
+        <a class="next" href="/post/pushevent/">
+            <span class="next-text nav-default">PushEvent</span>
+            <span class="next-text nav-mobile">Next</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        <div id="comments-gitment"></div>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/theme-next/theme-next-gitment@1/default.min.css" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/gh/theme-next/theme-next-gitment@1/gitment.browser.min.js" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+      var gitment = new Gitment({
+        id: '2022-03-18 17:39:41 \u002b0800 CST',
+        title: 'AutoCloure',
+        link: decodeURI(location.href),
+        desc: '@AutoCloure 用法记录 和原来理解的不同，有一种说法是，@AutoCloure主要的用途是延迟计算，当函数的参数需要延迟时，使用@AutoCloure可以',
+        owner: 'taontech',
+        repo: '',
+        oauth: {
+          client_id: '',
+          client_secret: ''
         }
-    }
+      });
+      gitment.render('comments-gitment');
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://github.com/imsun/gitment">comments powered by gitment.</a></noscript>
 
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener("click", function (e) {
-            e.preventDefault();
-            var id = this.getAttribute("href").substr(1);
-            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
-                    behavior: "smooth"
-                });
-            } else {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
-            }
-            if (id === "top") {
-                history.replaceState(null, null, " ");
-            } else {
-                history.pushState(null, null, `#${id}`);
-            }
-        });
-    });
+  
 
-</script>
-<script>
-    var mybutton = document.getElementById("top-link");
-    window.onscroll = function () {
-        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
-            mybutton.style.visibility = "visible";
-            mybutton.style.opacity = "1";
-        } else {
-            mybutton.style.visibility = "hidden";
-            mybutton.style.opacity = "0";
-        }
-    };
+  
 
-</script>
-<script>
-    document.getElementById("theme-toggle").addEventListener("click", () => {
-        if (document.body.className.includes("dark")) {
-            document.body.classList.remove('dark');
-            localStorage.setItem("pref-theme", 'light');
-        } else {
-            document.body.classList.add('dark');
-            localStorage.setItem("pref-theme", 'dark');
-        }
-    })
+      </div>
+    </main>
 
-</script>
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:taontech@gmail.com" class="iconfont icon-email" title="email"></a>
+      <a href="https://twitter.com/taontech" class="iconfont icon-twitter" title="twitter"></a>
+      <a href="https://github.com/taontech" class="iconfont icon-github" title="github"></a>
+  <a href="https://taontech.top/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2017 - 
+    2022<span class="heart"><i class="iconfont icon-heart"></i></span><span>taontech</span>
+  </span>
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.64437849d125a2d603b3e71d6de5225d641a32d17168a58106e0b61852079683.js"></script>
+
+
+
+
+
+
+
+
 </body>
-
 </html>

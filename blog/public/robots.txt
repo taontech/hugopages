@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://taontech.top/sitemap.xml

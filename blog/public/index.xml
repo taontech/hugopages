@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>战</title>
+    <title>TaonTech</title>
     <link>https://taontech.top/</link>
-    <description>Recent content on 战</description>
+    <description>Recent content on TaonTech</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>en</language>
     <lastBuildDate>Sat, 19 Mar 2022 09:37:02 +0800</lastBuildDate><atom:link href="https://taontech.top/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>NetworkSet</title>
@@ -13,10 +13,7 @@
       <pubDate>Sat, 19 Mar 2022 09:37:02 +0800</pubDate>
       
       <guid>https://taontech.top/post/networkset/</guid>
-      <description>Openwrt 如何下发不同的DNS和网关 修改/etc/config/network 文件 config &amp;lsquo;interface&amp;rsquo; &amp;rsquo;lan&amp;rsquo; option &amp;rsquo;type&amp;rsquo; &amp;lsquo;bridge&amp;rsquo; option &amp;lsquo;ifname&amp;rsquo; &amp;rsquo;eth0.0&amp;rsquo; option &amp;lsquo;proto&amp;rsquo; &amp;lsquo;static&amp;rsquo; option &amp;rsquo;netmask&amp;rsquo; &amp;lsquo;255.255.255.0&amp;rsquo; option &amp;lsquo;dns&amp;rsquo; &amp;lsquo;208.67.222.222&amp;rsquo;
-option &amp;lsquo;gateway&amp;rsquo; &amp;lsquo;192.168.3.1&amp;rsquo;
-option &amp;lsquo;ipaddr&amp;rsquo; &amp;lsquo;192.168.3.250&amp;rsquo; ————————————————
-版权声明：本文为CSDN博主「zjqlovell」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。 原文链接：https://blog.csdn.net/zjqlovell/article/details/78598959</description>
+      <description>Openwrt 如何下发不同的DNS和网关 主路由指定旁路有的ip为dns和网关，就可以所有的设备不用设置自动走旁路由 修改/etc/config/netwo</description>
     </item>
     
     <item>
@@ -25,8 +22,7 @@ option &amp;lsquo;ipaddr&amp;rsquo; &amp;lsquo;192.168.3.250&amp;rsquo; ——�
       <pubDate>Fri, 18 Mar 2022 18:37:18 +0800</pubDate>
       
       <guid>https://taontech.top/post/crontab/</guid>
-      <description>定时执行的脚本 ##背景 项目在开发过程中，我们的代码是托管在coding上面的，而服务器上面的代码的更新部署是使用git的，这就导致了，我每次都需要登录到那台服务器，然后进入项目的目录，执行git命令更新，但是在开发阶段，我们的代码更新的频率太高了，可不可以做到实时更新呢，其实git上面有git hocks，也就是钩子的概念，但是那个相对复杂，如果无法做到实时，那么定时可不可以，是可以的，利用shell脚本和crontab。 ###实际操作 首先要了解crontab,这这篇文写的不错，但是我没仔细看，因为我发现了，我可以直接使用下面这个命令来做 ##在Linux crontab -e 然后就会进入一个vi的编辑模式，在里面就可以参照上面文章里面的写你的定时器了，我写了一个5分钟更新一次的定时器 */5 * * * * /home/shell/sks-pull.sh 很简单，就是没5分钟执行一下这个脚本，脚本的内容是这样的 ‘#!/bin/sh’ PATH=&amp;quot;/home/wwwroot/BFLMobileMall&amp;quot; cd $PATH /usr/bin/git pull 很简单的一个脚本，这就可以实现没5分钟pull一次我的代码了 ###后记 这里有一些东西需要说明一下，定时脚本在更新了以后，里面的一些执行成功失败的语句，会保存下来，具体在哪里呢，其实每次登录服务器都会有提醒 您在 /var/spool/mail/root 中有新邮件 然后你就可以看到你的脚本有没有执行成功了
-注意 .sh 文件要执行需要 +x 权限。</description>
+      <description>定时执行的脚本 ##背景 项目在开发过程中，我们的代码是托管在coding上面的，而服务器上面的代码的更新部署是使用git的，这就导致了，我每次</description>
     </item>
     
     <item>
@@ -35,8 +31,7 @@ option &amp;lsquo;ipaddr&amp;rsquo; &amp;lsquo;192.168.3.250&amp;rsquo; ——�
       <pubDate>Fri, 18 Mar 2022 17:39:41 +0800</pubDate>
       
       <guid>https://taontech.top/post/autocloure/</guid>
-      <description>@AutoCloure 用法记录 和原来理解的不同，有一种说法是，@AutoCloure主要的用途是延迟计算，当函数的参数需要延迟时，使用@AutoCloure可以达到目标。
-import UIKit  var greeting = &amp;#34;Hello, playground&amp;#34; func 🍉(){  print(&amp;#34;🍉&amp;#34;)  wow(bPrint:true,count:🆘() + 10) } func 🆘()-&amp;gt;Int{  print(&amp;#34;help&amp;#34;)  return 9 } var aa:Int? let ssdsdf = 🆘() let b = aa ?? ssdsdf  func wow(bPrint:Bool, count:@autoclosure ()-&amp;gt; Int){  if bPrint{  print( count() )  } } 🍉() 上面代码中，🆘()方法是否调用，取决于wow函数中的逻辑，并不是作为函数参数一定会被调用。</description>
+      <description>@AutoCloure 用法记录 和原来理解的不同，有一种说法是，@AutoCloure主要的用途是延迟计算，当函数的参数需要延迟时，使用@AutoCloure可以</description>
     </item>
     
     <item>
@@ -45,8 +40,7 @@ import UIKit  var greeting = &amp;#34;Hello, playground&amp;#34; func 🍉(){  p
       <pubDate>Thu, 17 Mar 2022 14:57:13 +0800</pubDate>
       
       <guid>https://taontech.top/post/pushevent/</guid>
-      <description>webhook 总是失败 应该是插件webhook的问题，如果已经存在git的仓库，则启动caddy时就会报错：没有设置仓库。删除掉已经同步的git路径，则可以成功
-hook 成功了，但是更新仓库的动作还是会失败，就是说，虽然服务知道了push发生了，但是没有成功拉取到更新后的代码。</description>
+      <description>webhook 总是失败 应该是插件webhook的问题，如果已经存在git的仓库，则启动caddy时就会报错：没有设置仓库。删除掉已经同步的git路径，则</description>
     </item>
     
     <item>
@@ -55,7 +49,7 @@ hook 成功了，但是更新仓库的动作还是会失败，就是说，虽然
       <pubDate>Wed, 16 Mar 2022 16:54:33 +0800</pubDate>
       
       <guid>https://taontech.top/post/chromecast/</guid>
-      <description>ChromeCast google TV 无法联网原因之一 最近，因为手贱把chromecast google tv 版重置了以后，死活无法联网激活，用尽各种办法，什么全局科学\劫持DNS等等都不行,经过无数次的尝试，终于找到可能的原因：wifi无线的加密方式 包含wpa3的就会连接不上，改成WPA+WPA2混合就可以了。</description>
+      <description>ChromeCast google TV 无法联网原因之一 最近，因为手贱把chromecast google tv 版重置了以后，死活无法联网激活，用尽各种办法，什么全局科学\劫持DNS等等都不</description>
     </item>
     
     <item>
@@ -64,11 +58,7 @@ hook 成功了，但是更新仓库的动作还是会失败，就是说，虽然
       <pubDate>Tue, 15 Mar 2022 10:24:02 +0800</pubDate>
       
       <guid>https://taontech.top/post/posttest/</guid>
-      <description>test Auto webhook 红米 AX6S 解锁 SSH 安装 ShellClash 并刷入 openwrt 暴躁鸭2022年3月10日 15:12 202203092215670
-准备工作
-红米 AX6S 路由器 一台 Windows 或 Mac 的电脑 提前下载好需要的固件 下载安装好 Termius（老手可以不安装，直接用系统自带的 terminal） 如果你只需要 ShellClash 的功能，只用看前半部分就 OK ；需要刷 openwrt 可以跳过 ShellClash 的部分。不用担心变砖，刷坏了用官方修复工具即可刷回原厂。
-解锁 SSH
- 升级开发版固件 202203092209940 登录红米 AX6S 的后台（一般是：192.168.31.1），点击右上角选择-系统升级-选择手动升级，勾选下载好的「内测版」固件，点击开始升级。等待系统升级完成重启，重新连接上 Wi-Fi。 在线计算 root 密码 202203092210359 浏览器打开 https://www.oxygen7.cn/miwifi/ 输入路由器后台右下角完整的 SN 号，点击 GO。计算出来的结果就是 root 密码，复制保存好。 telnet 连接开启 ssh 打开 Termius，可以选择不登录 Continue Without Account。 8C2AAD6B-524A-420B-BFD0-C41C91B5DD24 点击 New Host 添加 51541936-2C8F-4B4A-9730-4CCEC7BA4900 Address 填写：192.</description>
+      <description>test Auto webhook 红米 AX6S 解锁 SSH 安装 ShellClash 并刷入 openwrt 暴躁鸭2022年3月10日 15:12 202203092215670 准备工作 红米 AX6S 路由器 一台 Windows 或 Mac 的电脑 提前下载好需要的固件 下载安装好 Termiu</description>
     </item>
     
     <item>
@@ -77,9 +67,7 @@ hook 成功了，但是更新仓库的动作还是会失败，就是说，虽然
       <pubDate>Tue, 15 Mar 2022 08:12:15 +0800</pubDate>
       
       <guid>https://taontech.top/post/hugodone/</guid>
-      <description>Hugo + Caddy + GitHub + Oracle免费云 + namasilo #### 搭建自动部署的markdown 博客系统 Hugo 用来生成网页
-Caddy web 服务，Github+git 存储同步代码，Oracle 免费VPS+IP， namesilo 便宜域名。
-hugo &amp;ndash;theme=hyde &amp;ndash;baseUrl=&amp;ldquo;https://taontech.top/&amp;quot;</description>
+      <description>Hugo + Caddy + GitHub + Oracle免费云 + namasilo #### 搭建自动部署的markdown 博客系统 Hugo 用来生成网页 Caddy web 服务，Github+git 存储同步代码，Orac</description>
     </item>
     
     <item>
@@ -88,7 +76,7 @@ hugo &amp;ndash;theme=hyde &amp;ndash;baseUrl=&amp;ldquo;https://taontech.top/&a
       <pubDate>Mon, 14 Mar 2022 22:11:23 +0800</pubDate>
       
       <guid>https://taontech.top/post/first/</guid>
-      <description>Hello World  记录一些心得想法 记录一些技巧、知识 发布一些感想、牢骚  TODO  自动部署有时间尝试下，不能每次都登录到VPS上，太麻烦 考虑手机书写发布的可能性  </description>
+      <description>Hello World 记录一些心得想法 记录一些技巧、知识 发布一些感想、牢骚 TODO 自动部署有时间尝试下，不能每次都登录到VPS上，太麻烦 考虑手机书写发布的可能性</description>
     </item>
     
     <item>
