@@ -6,7 +6,16 @@
     <description>Recent content in Posts on TaonTech</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 19 Mar 2022 09:37:02 +0800</lastBuildDate><atom:link href="https://taontech.top/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 20 Mar 2022 12:05:37 +0800</lastBuildDate><atom:link href="https://taontech.top/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AutoHugo</title>
+      <link>https://taontech.top/post/autohugo/</link>
+      <pubDate>Sun, 20 Mar 2022 12:05:37 +0800</pubDate>
+      
+      <guid>https://taontech.top/post/autohugo/</guid>
+      <description>测试自动hugo生成 每次都要生成public并生成上传，导致文件越来越多越大，并且每次操作的次数增加，容易出错，这次使用定时操作，拉取完代码</description>
+    </item>
+    
     <item>
       <title>NetworkSet</title>
       <link>https://taontech.top/post/networkset/</link>

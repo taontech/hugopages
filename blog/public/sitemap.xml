@@ -2,21 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://taontech.top/post/networkset/</loc>
-    <lastmod>2022-03-19T20:26:53+08:00</lastmod>
+    <loc>https://taontech.top/post/autohugo/</loc>
+    <lastmod>2022-03-20T12:05:37+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://taontech.top/post/</loc>
-    <lastmod>2022-03-19T20:26:53+08:00</lastmod>
+    <lastmod>2022-03-20T12:05:37+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://taontech.top/</loc>
+    <lastmod>2022-03-20T12:05:37+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://taontech.top/post/networkset/</loc>
     <lastmod>2022-03-19T20:26:53+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
