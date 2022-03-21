@@ -6,7 +6,16 @@
     <description>Recent content in Posts on TaonTech</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 21 Mar 2022 10:55:30 +0800</lastBuildDate><atom:link href="https://taontech.top/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 21 Mar 2022 16:55:44 +0800</lastBuildDate><atom:link href="https://taontech.top/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mailserver</title>
+      <link>https://taontech.top/post/mailserver/</link>
+      <pubDate>Mon, 21 Mar 2022 16:55:44 +0800</pubDate>
+      
+      <guid>https://taontech.top/post/mailserver/</guid>
+      <description>尝试搭建邮件服务 搬运安装过程 Downloading and running Poste.io There are two versions of product, PRO and FREE image. PRO VERSION 1 poste.io/mailserver # (from https://poste.io docker server) FREE VERSION 1 analogic/poste.io # (from https://hub.docker.com) Both versions share same data directory structure - the only one difference when running PRO version is that you will login to our private docker repository.</description>
+    </item>
+    
     <item>
       <title>GitIssuse</title>
       <link>https://taontech.top/post/gitissuse/</link>
