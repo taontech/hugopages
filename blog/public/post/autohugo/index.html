@@ -23,7 +23,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.94.2 with theme even" />
+<meta name="generator" content="Hugo 0.93.2 with theme even" />
 
 
 <link rel="canonical" href="https://taontech.top/post/autohugo/" />
@@ -49,7 +49,7 @@
 <meta itemprop="name" content="AutoHugo">
 <meta itemprop="description" content="测试自动hugo生成 每次都要生成public并生成上传，导致文件越来越多越大，并且每次操作的次数增加，容易出错，这次使用定时操作，拉取完代码"><meta itemprop="datePublished" content="2022-03-20T12:05:37+08:00" />
 <meta itemprop="dateModified" content="2022-03-20T12:11:12+08:00" />
-<meta itemprop="wordCount" content="108">
+<meta itemprop="wordCount" content="313">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="AutoHugo"/>
 <meta name="twitter:description" content="测试自动hugo生成 每次都要生成public并生成上传，导致文件越来越多越大，并且每次操作的次数增加，容易出错，这次使用定时操作，拉取完代码"/>
@@ -130,7 +130,7 @@
       <div class="post-meta">
         <span class="post-time"> 202020-03-03 </span>
         
-          <span class="more-meta"> 108 words </span>
+          <span class="more-meta"> 313 words </span>
           <span class="more-meta"> 1 min read </span>
         
       </div>
@@ -141,7 +141,11 @@
   <div class="post-toc-content always-active">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#测试自动hugo生成">测试自动hugo生成</a></li>
+    <li><a href="#测试自动hugo生成">测试自动hugo生成</a>
+      <ul>
+        <li><a href="#要解决的问题">要解决的问题</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
   </div>
@@ -149,6 +153,12 @@
     <div class="post-content">
       <h1 id="测试自动hugo生成">测试自动hugo生成</h1>
 <p>每次都要生成public并生成上传，导致文件越来越多越大，并且每次操作的次数增加，容易出错，这次使用定时操作，拉取完代码自动编译hugo，删除掉public，每次都使用本地的代码生成public。</p>
+<h2 id="要解决的问题">要解决的问题</h2>
+<ol>
+<li>服务端代码的执行问题，目前只能在.sh里执行，是否能执行成功，待验证。</li>
+<li>public路径的问题，如果在本地hugo,则需要把public从git管理中移除，否则会面临冲突的问题，还有种办法就是本地不生成，全部由服务来生成，服务不push代码，则不会冲突。但是这种办法对验证效果的实时性不好</li>
+<li>大家的教程中都是针对服务端来生成的，可能这种是正规的办法，现在我这种上传public的方法可能在后续会遇到问题。</li>
+</ol>
 
     </div>
 
@@ -170,7 +180,11 @@
 <footer class="post-footer">
       
       <nav class="post-nav">
-        
+        <a class="prev" href="/post/gitissuse/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">GitIssuse</span>
+            <span class="prev-text nav-mobile">Prev</span>
+          </a>
         <a class="next" href="/post/networkset/">
             <span class="next-text nav-default">NetworkSet</span>
             <span class="next-text nav-mobile">Next</span>

@@ -6,7 +6,16 @@
     <description>Recent content on TaonTech</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 20 Mar 2022 12:05:37 +0800</lastBuildDate><atom:link href="https://taontech.top/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 21 Mar 2022 10:55:30 +0800</lastBuildDate><atom:link href="https://taontech.top/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>GitIssuse</title>
+      <link>https://taontech.top/post/gitissuse/</link>
+      <pubDate>Mon, 21 Mar 2022 10:55:30 +0800</pubDate>
+      
+      <guid>https://taontech.top/post/gitissuse/</guid>
+      <description>强大如斯 GITHUB 目前各种组件的使用情况看，github issuse的使用没有严重的滥用问题，这里讨论下可能的场景，充分利用github这颗大树，组</description>
+    </item>
+    
     <item>
       <title>AutoHugo</title>
       <link>https://taontech.top/post/autohugo/</link>
